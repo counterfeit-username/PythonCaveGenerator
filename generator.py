@@ -129,3 +129,5 @@ try: # Write the map to a json file.
 except FileExistsError:
     with open(filepath, mode='w') as file:
         json.dump(map, file)
+except NameError:
+    pass
